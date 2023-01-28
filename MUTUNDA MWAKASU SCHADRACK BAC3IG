@@ -1,0 +1,74 @@
+package BAC3.IG;
+import java.util.*;
+public class TestETudiants {
+	public static void main(String[] args) {
+	ArrayList<Etudiants> faculte =  new ArrayList<Etudiants>();
+faculte.add(new Etudiants("2020022135"," MUTUNDA MWAKASU SCHADRACK","bac3.ig",25,"celibataire"));
+faculte.add(new Etudiants("2019022159","MULUMB MUKAND GRACE ","bac3.ig",25,"marie"));
+faculte.add(new Etudiants("2019022123","MUTEMB MUNDIAD PAUL","bac3.ig",40,"celibataire"));
+faculte.add(new Etudiants("2019022124","KALOND KAND EMMA","bac2.ig",25,"marie"));
+faculte.add(new Etudiants("2019022123","KAKAND KOND JOSUE","bac3.ig",25,"celibataire"));
+faculte.add(new Etudiants("2020022175","RAMAZANI DJUMA ARISTOTE","bac2.ig",20,"marie"));
+faculte.add(new Etudiants("2020022138","MWABA KALWANI JAMES","bac3.ig",25,"celibataire"));
+faculte.add(new Etudiants("2019022124","KYALA KISIMBA PIERRE","bac2.ig",25,"marie"));
+faculte.add(new Etudiants("2019022123","MUKAND KOND JUNIOR","bac3.ig",25,"celibataire"));
+faculte.add(new Etudiants("2019022124","MWIKA TSHISWAKA TANIA","bac2.ig",25,"marie"));
+faculte.add(new Etudiants("2019022123","MUKAND MALAND JULIA","bac3.ig",25,"celibataire"));
+faculte.add(new Etudiants("2019022124","KALUMB JING JOSÉPHINE","bac2.ig",25,"marie"));
+faculte.add(new Etudiants("2019022123","KABUND KABAL PRINCE","bac3.ig",25,"celibataire"));
+faculte.add(new Etudiants("2019022124","MANKAND KOMBAND ESTHER","bac2.ig",25,"marie"));
+
+        Scanner lect = new Scanner(System.in);
+        Scanner choi = new Scanner(System.in);
+System.out.println("BIENVENU DANS LA GESTION DES ETUDIANTS");
+System.out.println("");
+System.out.println("\t tapez 1.pour rechercher par mot cle");
+System.out.println("\t tapez 2.pour afficher tout les etudiants celibataires ");
+System.out.println("\t tapez 3.pour afficher tout les etudiants de bac3 dont l'age>20ans");
+int choix = choi.nextInt();
+    if(choix==1) {
+	System.out.println("TAPEZ LE MOT CLE A CHERCHER?");
+	String rech = lect.nextLine();
+for(Etudiants a :faculte) {
+	if(a.getNom().contains(rech))
+		System.out.println(a);
+	else {
+		System.out.println();		
+	}
+     }	
+}
+
+else if(choix==2) {
+	for(Etudiants a : faculte) {
+		if(a.getEtat_civil().equalsIgnoreCase("celibataire"))
+			System.out.println(a);
+          	}
+          }
+      }
+}
+9022124","KALOND KAND EMMA","bac2.ig",25,"marie"));
+faculte.add(new Etudiants("2019022123","KAKAND KOND JOSUE","bac3.ig",25,"celibataire"));
+faculte.add(new Etudiants("2019022124","KALOND KAND EMMA","bac2.ig",25,"marie"));
+Scanner lect = new Scanner(System.in);
+Scanner choi = new Scanner(System.in);
+System.out.println("BIENVENU DANS LA GESTION DES ETUDIANTS");
+System.out.println("");
+System.out.println("\t tapez 1.pour rechercher par mot cle");
+System.out.println("\t tapez 2.pour afficher tout les etudiants celibataires ");
+System.out.println("\t tapez 3.pour afficher tout les etudiants de bac3 dont l'age>20ans");
+int choix = choi.nextInt();
+
+if(choix==1) {
+        System.out.println("TAPEZ LE MOT CLE A CHERCHER?");
+  String rech = lect.nextLine();
+        for(Etudiants a :faculte) {
+            if(a.getNom().contains(rech))
+	System.out.println(a);
+else {
+		System.out.println(); 		
+	}
+      }	
+}
+else if(choix==2) {
+	for(Etudiants a : faculte) {
+		if(a.getEtat_civil().equalsIgnoreCase("celibataire"))Syste
